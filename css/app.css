@@ -1,0 +1,72 @@
+
+
+/* ------Home Page-----------
+------------------------------
+ */
+
+.background{
+    background-color:lightgray;
+}
+.top-bar{
+    background-color: #0c3d5d;
+    display:inline-flex;
+    width:100%;
+    height:auto;
+    text-align: center;
+    margin-top: 0px;
+    justify-content: space-between;
+}
+
+h3.menu-text{
+    color:White;
+    background-color: #0c3d5d;
+    text-align: center;
+    margin-left:18%;
+}
+.title-bar{
+    text-align: left;
+}
+.subheader{
+    -webkit-border-horizontal-spacing: 20px;
+    float:left;
+    height: auto;
+    color:#1673b1;
+    font-weight: bold;
+    margin-bottom: 0%;
+
+}
+
+
+.button {
+    border-radius: 7px;
+    background-color: #0c3d5d;
+    text-decoration-color: white;
+    width: auto;
+    font-size: 16px;
+    padding: 8px;
+}
+
+/* ------Login Page-----------
+------------------------------
+ */
+
+.LgnTtl {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5%;
+}
+.form1{
+    alignment: center;
+    vertical-align: middle;
+    margin-top: 5%;
+    margin-left: 13%;
+    margin-right: 15%
+}
+
+/* ------User Home Page-----------
+------------------------------
+ */
+.Filters{
+    /*hello*/
+}
+

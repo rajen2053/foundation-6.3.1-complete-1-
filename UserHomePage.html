@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foundation for Sites</title>
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body class="background">
+        <div class="top-bar">
+            <a href="index.html"><h3 class="menu-text">Sarcopenia Demographics and Statistics Center</h3></a>
+        </div>
+
+        <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+            <div class="title-bar-title">Menu</div>
+        </div>
+
+        <div class="subheader" id="example-menu">
+            <div class="subheader">
+                <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
+                    <li><div class="medium-3 columns">Home</div></li>
+                    <li><div class="medium-3 columns">About</div></li>
+                    <li><div class="medium-3 columns">Contact</div></li>
+                    <li><div class="medium-3 columns">Profile</div></li>
+                    <li><div class="medium-3 columns">Logout</div></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <hr color="#0c3d5d">
+        <div class="Filters">
+            <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
+                <li>
+                    <div class="medium-12 columns">
+                        <select id="EntrSex" onchange="Sex()">
+                            <option value="">Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="medium-12 columns">
+                        <select id="EntrAge" onchange="Age()">
+                            <option value="">Age Group</option>
+                            <option value="65-70">65-70</option>
+                            <option value="70-75">70-75</option>
+                            <option value="75-80">75-80</option>
+                            <option value="80-85">80-85</option>
+                            <option value="85-90">85-90</option>
+                            <option value="90-95">90-95</option>
+                            <option value="95-100">95-100</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="medium-12 columns">
+                        <select id="EntrRace" onchange="Race()">
+                            <option value="">Race</option>
+                            <option value="African American">African American</option>
+                            <option value="Caucasian">Caucasian</option>
+                            <option value="Asian">Asian</option>
+                            <option value="Hispanic/Latino">Hispanic/Latino</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="medium-12 columns">
+                        <select id="maritalStatus" onchange="MaritalStatus()">
+                            <option value="">Marital Status</option>
+                            <option value="Single">Single/Unmarried</option>
+                            <option value="Married">Married</option>
+                            <option value="Divorced">Divorced</option>
+                            <option value="Widowed">Widowed</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <div class="medium-6 columns">
+                            Login
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+<!-- This demo uses float grid but you can use flex grid too -->
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.js"></script>
+        <script src="js/app.js"></script>
+    </body>
