@@ -4,34 +4,34 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Foundation for Sites</title>
+        <title>User Home</title>
         <link rel="stylesheet" href="css/foundation.css">
         <link rel="stylesheet" href="css/app.css">
     </head>
     <body class="background">
-        <div class="top-bar">
-            <a href="index.html"><h3 class="menu-text">Sarcopenia Demographics and Statistics Center</h3></a>
-        </div>
-
-        <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-            <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-            <div class="title-bar-title">Menu</div>
-        </div>
-
-        <div class="subheader" id="example-menu">
-                <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
-                    <li><div class="medium-12 columns">Home</div></li>
-                    <li><div class="medium-12 columns">About</div></li>
-                    <li><div class="medium-12 columns">Contact</div></li>
-                    <li><div class="medium-12 columns">Profile</div></li>
-                    <li><div class="medium-12 columns">Logout</div></li>
-                </ul>
-            </div>
-
-            <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
+    <div class="top-bar">
+        <a href="index.html"><h3 class="menu-text">Sarcopenia Demographics and Statistics Center</h3></a>
+    </div>
+    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+        <div class="title-bar-title">Menu</div>
+    </div>
+    <div class="title-bar" id="example-menu">
+        <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
+            <li><a href="index.html"> <div class="medium-12 columns" style="border-left:1px solid darkgray">Home</div></a></li>
+            <li><a href="About.html"> <div class="medium-12 columns" style="border-left:1px solid darkgray">About</div></a></li>
+            <li><a href="Contact.html"> <div class="medium-12 columns" style="border-left:1px solid darkgray">Contact</div></a></li>
+            <li><a href="Settings.html"><div class="medium-12 columns" style="border-left:1px solid darkgray">Settings</div></a></li>
+            <li><a href="Logout.html"><div class="medium-12 columns" style="border-left:1px solid darkgray; border-right: 1px solid darkgray;" >Logout</div></a></li>
+        </ul>
+    </div>
+        <p class="WelcomeTextInUserHome">Welcome User,<br>
+        Please choose your criteria from the filters below:</p>
+            <ul class="dropdown vertical medium-horizontal menu"  id="nav" data-dropdown-menu>
+                <br>
                 <li>
                     <div class="medium-12 columns">
-                        <select id="EntrAge" onchange="Age()">
+                        <select id="AgeCategory" onchange="Age()">
                             <option value="Age Category">Age Category</option>
                             <option value="65-70">65-70</option>
                             <option value="70-75">70-75</option>
@@ -45,7 +45,7 @@
                 </li>
                 <li>
                     <div class="medium-12 columns">
-                        <select id="EntrSex" onchange="Sex()">
+                        <select id="Sex" onchange="Sex()">
                             <option value="">Gender</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
@@ -55,9 +55,8 @@
                 </li>
                 <li>
                     <div class="medium-12 columns">
-                        <div class="Filters">
-                        <select id="EntrRace" onchange="Race()">
-                            <option value="">Race</option>
+                        <select id="Race" onchange="Race()">
+                            <option value="Race">Race</option>
                             <option value="African American">African American</option>
                             <option value="Caucasian">Caucasian</option>
                             <option value="Asian">Asian</option>
@@ -67,8 +66,8 @@
                 </li>
                 <li>
                         <div class="medium-12 columns">
-                            <select id="maritalStatus" onchange="MaritalStatus()">
-                                <option value="">Ethnicity</option>
+                            <select id="MaritalStatus" onchange="MaritalStatus()">
+                                <option value="maritalStatus">Marital Status</option>
                                 <option value="Single">Single/Unmarried</option>
                                 <option value="Married">Married</option>
                                 <option value="Divorced">Divorced</option>
@@ -77,39 +76,33 @@
                         </div>
                 </li>
                 <li>
-                    <div class="medium-12 columns"><select id="Diagnostic Code" onchange="Diagnostic Code()">
-                        <option value="Geographical Setting">Setting</option>
-                        <option value="Rural"> Rural</option>
-                        <option value="Urban">Urban</option>
-                    </select>
+                    <div class="medium-12 columns">
+                        <select id="AreaOfLiving" onchange="AreaOfLiving()">
+                            <option value="AreaOfLiving">Area of Living</option>
+                            <option value="Rural"> Rural</option>
+                            <option value="Urban">Urban</option>
+                        </select>
+                    </div>
+                </li>
+                <br>
+                <li>
 
+                    <button class="SubmitButton" onclick="showPicture()">Submit</button>
+                </li>
+                <hr>
+                <br>
+                    <img style="display:none" id="bigpic" src="Images/Table1.png"/>
+                <br>
+                <li><button class="SubmitButton" id="BackButton" style="display: none;" onclick="hidePicture()">Undo</button></li>
 
-                    </div>
-                </li>
-                <li>
-                    <div class="medium-12 columns">
-                        <div class="button">Submit</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="medium-12 columns">
-                        <div class="button">Graph</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="medium-12 columns">
-                        <div class="button">Export</div>
-                    </div>
-                </li>
             </ul>
-
-        </div>
-
 
 
 <!-- This demo uses float grid but you can use flex grid too -->
+        <script src="Script.js"></script>
         <script src="js/vendor/jquery.js"></script>
         <script src="js/vendor/what-input.js"></script>
         <script src="js/vendor/foundation.js"></script>
         <script src="js/app.js"></script>
+
     </body>

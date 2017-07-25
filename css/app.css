@@ -1,49 +1,77 @@
 
 
-/* ------Home Page-----------
+/* ------Home Page------------
 ------------------------------
  */
-
 .background{
-    background-color:lightgray;
+    background-color: #F5F3EE;
+}
+a{
+    color:white;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .top-bar{
-    background-color: #0c3d5d;
-    display:inline-flex;
+    background-color:#0c3d5d;
     width:100%;
     height:auto;
-    text-align: center;
-    margin-top: 0px;
-    justify-content: space-between;
+    position:relative;
+    color: white;
+    overflow:hidden;
 }
 
 h3.menu-text{
-    color:White;
-    background-color: #0c3d5d;
+    color:white;
     text-align: center;
-    margin-left:18%;
+}
+h4{
+    color:#0c3d5d;
 }
 .title-bar{
-    text-align: left;
-}
-.subheader{
-    -webkit-border-horizontal-spacing: 20px;
-    float:left;
+    text-align:left;
     height: auto;
-    color:#1673b1;
+    color:white;
     font-weight: bold;
-    margin-bottom: 0%;
-
+    margin-bottom: 2%;
+    padding:5px 0 0 5px;
+    background-color:black;
+    display: block;
+    box-sizing: content-box;
 }
 
+#example-menu{
+    text-align:left;
+    position: relative;
 
+}
+.vertical{
+    margin-left: 20%;
+    margin-right:15%;
+    text-align:left;
+}
 .button {
-    border-radius: 7px;
+    border-radius: 5px;
     background-color: #0c3d5d;
     text-decoration-color: white;
     width: auto;
     font-size: 16px;
     padding: 8px;
+    position:relative;
+    text-align: center;
+}
+.AccessButton{
+    border-radius: 5px;
+    background-color: #0c3d5d;
+    color: white;
+    width: 20%;
+    font-size: 16px;
+    padding: 8px;
+    position:relative;
+    margin-left: 40%;
+    text-align: center;
 }
 
 /* ------Login Page-----------
@@ -64,9 +92,44 @@ h3.menu-text{
 }
 
 /* ------User Home Page-----------
-------------------------------
+----------------------------------
  */
-.Filters{
-    /*hello*/
+p{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    font-weight: 500;
+}
+#AgeCategory, #Race,#MaritalStatus,#Sex,#AreaOfLiving {
+    border-radius: 5px;
+    height:auto;
+    vertical-align: middle;
+
+}
+.SubmitButton{
+    border-radius: 5px;
+    background-color: #0c3d5d;
+    text-decoration-color: white;
+    width: auto;
+    font-size: 16px;
+    padding: 8px;
+    position:relative;
+    margin-left:25%;
+    color:white;
+}
+.WelcomeTextInUserHome{
+    margin-left:20%;
+}
+#nav{
+    background-color: silver;
 }
 
+/* ------Register Page------------
+----------------------------------
+*/
+.form2 {
+    alignment: center;
+    vertical-align: middle;
+    margin-left: 8%;
+    margin-right: 10%;
+}
