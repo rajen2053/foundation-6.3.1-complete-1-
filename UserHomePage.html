@@ -1,32 +1,53 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>User Home</title>
-        <link rel="stylesheet" href="css/foundation.css">
-        <link rel="stylesheet" href="css/app.css">
-    </head>
-    <body class="background">
-    <div class="top-bar">
-        <a href="index.html"><h3 class="menu-text">Sarcopenia Demographics and Statistics Center</h3></a>
-    </div>
-    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-        <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-        <div class="title-bar-title">Menu</div>
-    </div>
-    <div class="title-bar" id="example-menu">
-        <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
-            <li><a href="index.html"> <div class="medium-12 columns" style="border-left:1px solid darkgray">Home</div></a></li>
-            <li><a href="About.html"> <div class="medium-12 columns" style="border-left:1px solid darkgray">About</div></a></li>
-            <li><a href="Contact.html"> <div class="medium-12 columns" style="border-left:1px solid darkgray">Contact</div></a></li>
-            <li><a href="Settings.html"><div class="medium-12 columns" style="border-left:1px solid darkgray">Settings</div></a></li>
-            <li><a href="Logout.html"><div class="medium-12 columns" style="border-left:1px solid darkgray; border-right: 1px solid darkgray;" >Logout</div></a></li>
-        </ul>
-    </div>
-        <p class="WelcomeTextInUserHome">Welcome User,<br>
-        Please choose your criteria from the filters below:</p>
+    <html class="no-js" lang="en" dir="ltr">
+        <head>
+            <title>
+                User Home
+            </title>
+            <meta charset="utf-8">
+            <meta http-equiv="x-ua-compatible" content="ie=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/foundation.css">
+            <link rel="stylesheet" href="css/app.css">
+        </head>
+        <body class="background">
+            <div class="top-bar">
+                <a href="index.html"><h3 class="menu-text">Sarcopenia Demographics and Statistics Center</h3></a>
+            </div>
+            <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+                <div class="title-bar-title">Menu</div>
+            </div>
+            <div class="title-bar" id="example-menu">
+                <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
+                    <li>
+                        <a href="index.html">
+                            <div class="medium-12 columns" style="border-left:1px solid darkgray">Home</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="About.html">
+                            <div class="medium-12 columns" style="border-left:1px solid darkgray">About</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Contact.html">
+                            <div class="medium-12 columns" style="border-left:1px solid darkgray">Contact</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Settings.html"><div class="medium-12 columns" style="border-left:1px solid darkgray">Settings</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <div class="medium-12 columns" style="border-left:1px solid darkgray; border-right: 1px solid darkgray;" >Logout</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="WelcomeTextInUserHome">Welcome User,<br>
+                Please choose your criteria from the filters below:</p>
             <ul class="dropdown vertical medium-horizontal menu"  id="nav" data-dropdown-menu>
                 <br>
                 <li>
@@ -86,23 +107,32 @@
                 </li>
                 <br>
                 <li>
-
                     <button class="SubmitButton" onclick="showPicture()">Submit</button>
                 </li>
                 <hr>
                 <br>
-                    <img style="display:none" id="bigpic" src="Images/Table1.png"/>
+                    <img style="display:none" id="Table1" src="Images/Table1.png"/>
                 <br>
-                <li><button class="SubmitButton" id="BackButton" style="display: none;" onclick="hidePicture()">Undo</button></li>
+                <li>
+                    <button class="SubmitButton" id="GraphButton" style="display: none;" onclick="ShowChartsHome()">Charts</button>
+                 <br>
+                    <img style="display:none" id="ChartsHome" src="Images/ChartsHome.png"/>
 
+                </li>
+                <br>
+                <li>
+                    <button class="SubmitButton" id="ExportButton" style="display: none;" onclick="ExportDataAlert()">Export</button>
+                </li>
+                <br>
+                <li>
+                    <button class="SubmitButton" id="BackButton" style="display: none;" onclick="HidePicture()">Reset</button>
+                </li>
             </ul>
-
-
 <!-- This demo uses float grid but you can use flex grid too -->
-        <script src="Script.js"></script>
-        <script src="js/vendor/jquery.js"></script>
-        <script src="js/vendor/what-input.js"></script>
-        <script src="js/vendor/foundation.js"></script>
-        <script src="js/app.js"></script>
-
-    </body>
+            <script src="Script.js"></script>
+            <script src="js/vendor/jquery.js"></script>
+            <script src="js/vendor/what-input.js"></script>
+            <script src="js/vendor/foundation.js"></script>
+            <script src="js/app.js"></script>
+        </body>
+    </html>

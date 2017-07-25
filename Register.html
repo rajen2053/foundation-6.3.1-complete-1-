@@ -1,61 +1,113 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-<head style="background-color: #0c3d5d">
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-</head>
-<body class="background">
-<div class="top-bar">
-    <a href="index.html"><h3 class="menu-text">Sarcopenia Demographics and Statistics Center</h3></a>
-</div>
-<form class="form2" method="POST">
-    <table width="50%" style="margin:30px auto;" border="0" align="center" cellpadding="5" cellspacing="0">
-        <tbody>
-        <tr>
-            <h4 class="LgnTtl">Registration Portal</h4>
-        </tr>
-        <tr>
-            <td width="20%" nowrap="nowrap" style="text-align: right">First Name:</td>
-            <td width="20%"><input name="FirstName" type="text" id="FirstName" size="30" style="width: 200px;" ></td>
-        </tr>
-        <tr>
-            <td width="20%" nowrap="nowrap" style="text-align: right">Last Name:</td>
-            <td width="20%"><input name="LastName" type="text" id="LastName" size="30" style="width: 200px;" ></td>
-        </tr>
-        <tr>
-            <td width="20%" nowrap="nowrap" style="text-align: right">Email:</td>
-            <td width="20%"><input name="Email" type="email" id="Email" size="30" style="width: 200px;" ></td>
-        </tr>
-        <tr>
-            <td width="20%" nowrap="nowrap" style="text-align: right">User_ID:</td>
-            <td width="20%"><input name="Username" type="text" id="Username" size="30" style="width: 200px;" ></td>
-        </tr>
-        <tr>
-            <td nowrap="nowrap" style="text-align: right">Password:</td>
-            <td><input name="Password" type="password" id="Password" size="30" style="width: 200px;"></td>
-        </tr>
-        <tr>
-            <td nowrap="nowrap" style="text-align: right"> Password:</td>
-            <td><input name="ConfirmPassword" type="password" id="ConfirmPassword" size="30" style="width: 200px;"></td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td><a href=""><div class="button">Register</div></a></td>
-        </tr>
-
-        </tbody>
-    </table>
-    <a style= "color:#0c3d5d " href="login.html"> <p style= "margin-top: -30px; text-align: center"> I already have an account</p></a>
-</form>
-
-<script src="js/vendor/jquery.js"></script>
-<script src="js/vendor/what-input.js"></script>
-<script src="js/vendor/foundation.js"></script>
-<script src="js/app.js"></script>
-
-</body>
-</html>
+    <html class="no-js" lang="en" dir="ltr">
+        <head>
+            <title>
+                Register
+            </title>
+            <meta charset="utf-8">
+            <meta http-equiv="x-ua-compatible" content="ie=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/foundation.css">
+            <link rel="stylesheet" href="css/app.css">
+        </head>
+        <body class="background">
+            <div class="top-bar">
+                <a href="index.html">
+                    <h3 class="menu-text">Sarcopenia Demographics and Statistics Center</h3>
+                </a>
+            </div>
+            <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+                <div class="title-bar-title">Menu</div>
+            </div>
+            <div class="title-bar" id="example-menu">
+                <ul class="vertical medium-horizontal menu" data-dropdown-menu>
+                    <li style="text-align: center">
+                        <a href="index.html">
+                            <div class="medium-12 columns" style="border-left:1px solid darkgray">Home</div>
+                        </a>
+                    </li>
+                    <li style="text-align: center">
+                        <a href="About.html">
+                            <div class="medium-12 columns" style="border-left:1px solid darkgray">About</div>
+                        </a>
+                    </li>
+                    <li style="text-align: center">
+                        <a href="Contact.html">
+                            <div class="medium-12 columns" style="border-left:1px solid darkgray">Contact</div>
+                        </a>
+                    </li>
+                    <li style="text-align: center">
+                        <a href="Register.html">
+                            <div class="medium-12 columns" style="border-left:1px solid darkgray">Register</div>
+                        </a>
+                    </li>
+                    <li style="text-align: center">
+                        <a href="login.html">
+                            <div class="medium-12 columns" style="border-left:1px solid darkgray; border-right: 1px solid darkgray" >Login</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <form class="form2" method="POST">
+                <table width="50%" style="margin:30px auto;" border="0" align="center" cellpadding="5" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <h4 class="LgnTtl">Registration Portal</h4>
+                            </tr>
+                            <tr>
+                                <td width="20%" nowrap="nowrap" style="text-align: right">First Name:</td>
+                                <td width="20%">
+                                    <input name="FirstName" type="text" id="FirstName" size="30" style="width: 200px" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="20%" nowrap="nowrap" style="text-align: right">Last Name:</td>
+                                <td width="20%">
+                                    <input name="LastName" type="text" id="LastName" size="30" style="width: 200px" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="20%" nowrap="nowrap" style="text-align: right">Email:</td>
+                                <td width="20%">
+                                    <input name="Email" type="email" id="Email" size="30" style="width: 200px" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="20%" nowrap="nowrap" style="text-align: right">User_ID:</td>
+                                <td width="20%">
+                                    <input name="Username" type="text" id="Username" size="30" style="width: 200px" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="nowrap" style="text-align: right">Password:</td>
+                                <td>
+                                    <input name="Password" type="password" id="Password" size="30" style="width: 200px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="nowrap" style="text-align: right"> Password:</td>
+                                <td>
+                                    <input name="ConfirmPassword" type="password" id="ConfirmPassword" size="30" style="width: 200px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>
+                                    <a href="">
+                                        <div class="button">Register</div>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                </table>
+                <a style= "color:#0c3d5d " href="login.html">
+                    <p style= "margin-top: -30px; text-align: center"> Already have an account? Login</p>
+                </a>
+            </form>
+            <script src="js/vendor/jquery.js"></script>
+            <script src="js/vendor/what-input.js"></script>
+            <script src="js/vendor/foundation.js"></script>
+            <script src="js/app.js"></script>
+        </body>
+    </html>

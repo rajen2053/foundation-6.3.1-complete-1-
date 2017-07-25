@@ -1,45 +1,90 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-</head>
-<body class="background">
-<div class="top-bar">
-    <a href="index.html"><h3 class="menu-text">Sarcopenia Demographics and Statistics Center</h3></a>
-</div>
-<form class="form1" method="POST">
-    <table width="50%" style="margin:30px auto;" border="0" align="center" cellpadding="5" cellspacing="0">
-        <tbody><tr>
-            <h4 class="LgnTtl">Login Portal</h4>
-        </tr>
-        <tr>
-            <td width="20%" nowrap="nowrap" style="text-align: right">User_ID:</td>
-            <td width="20%"><input name="Username" type="text" id="Username" size="30" style="width:200px" ></td>
-        </tr>
-        <tr>
-            <td nowrap="nowrap" style="text-align: right">Password:</td>
-            <td><input name="Password" type="password" id="Password" size="30" style="width:200px"></td>
-        </tr>
-        <tr>
-
-            <td>&nbsp;</td>
-            <td><a href="UserHomePage.html"><div class="button">Login</div></a></td>
-        </tr>
-
-        </tbody></table>
-     <p style= "text-decoration: none;text-align: center"> Forgot Your Password?</p>
-
-    <a style= "color:#0c3d5d" href="Register.html"> <p style="text-align: center"> I do not have an account</p></a>
-</form>
+    <html class="no-js" lang="en" dir="ltr">
+        <head>
+            <title>
+                Login
+            </title>
+            <meta charset="utf-8">
+            <meta http-equiv="x-ua-compatible" content="ie=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/foundation.css">
+            <link rel="stylesheet" href="css/app.css">
+        </head>
+        <body class="background">
+            <div class="top-bar">
+                <a href="index.html">
+                    <h3 class="menu-text">Sarcopenia Demographics and Statistics Center</h3>
+                </a>
+            </div>
+            <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+                <div class="title-bar-title">Menu</div>
+            </div>
+            <div class="title-bar" id="example-menu">
+                <ul class="vertical medium-horizontal menu" data-dropdown-menu>
+                    <li style="text-align: center">
+                        <a href="index.html">
+                            <div class="medium-12 columns" style="border-left:1px solid darkgray">Home</div>
+                        </a>
+                    </li>
+                    <li style="text-align: center">
+                        <a href="About.html">
+                            <div class="medium-12 columns" style="border-left:1px solid darkgray">About</div>
+                        </a>
+                    </li>
+                    <li style="text-align: center">
+                        <a href="Contact.html">
+                            <div class="medium-12 columns" style="border-left:1px solid darkgray">Contact</div>
+                        </a>
+                    </li>
+                    <li style="text-align: center">
+                        <a href="Register.html">
+                            <div class="medium-12 columns" style="border-left:1px solid darkgray">Register</div>
+                        </a>
+                    </li>
+                    <li style="text-align: center">
+                        <a href="login.html"><div class="medium-12 columns" style="border-left:1px solid darkgray; border-right: 1px solid darkgray" >Login</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <form class="form1" method="POST">
+                <table width="50%" style="margin:30px auto;" border="0" align="center" cellpadding="5" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <h4 class="LgnTtl">Login Portal</h4>
+                        </tr>
+                        <tr>
+                            <td width="20%" nowrap="nowrap" style="text-align: right">User_ID:</td>
+                            <td width="20%">
+                                <input name="Username" type="text" id="Username" size="30" style="width:200px" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td nowrap="nowrap" style="text-align: right">Password:</td>
+                            <td>
+                                <input name="Password" type="password" id="Password" size="30" style="width:200px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>
+                                <a href="UserHomePage.html">
+                                    <div class="button">Login</div>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style= "text-decoration: none;text-align: center"> Forgot Your Password?</p>
+                <a style= "color:#0c3d5d" href="Register.html">
+                    <p style="text-align: center"> Do not have an account? Register</p>
+                </a>
+            </form>
 <!-- This demo uses float grid but you can use flex grid too -->
-<script src="js/vendor/jquery.js"></script>
-<script src="js/vendor/what-input.js"></script>
-<script src="js/vendor/foundation.js"></script>
-<script src="js/app.js"></script>
-</body>
-</html>
+            <script src="js/vendor/jquery.js"></script>
+            <script src="js/vendor/what-input.js"></script>
+            <script src="js/vendor/foundation.js"></script>
+            <script src="js/app.js"></script>
+        </body>
+    </html>
